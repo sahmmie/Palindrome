@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Palindrome</h1>
+            <div class="card">
+                <div class="position">
+                    <h2 class="text-right mr-2">Life: <strong><span id="life"></span></strong></h2>
+                    <h2 class="text-right mr-2">Score: <strong><span id="answer">0</span></strong></h2>
+                </div>
+                <div class="card-body">
+                    <input type="text" class="form-control mb-2" pattern="[A-Za-z]" onkeyup="validate()" id="word">
+                    <button class="btn btn-primary block" onclick="palindrome()">Word It</button>
+                </div>
+            </div>
+            <div>
+                <p class="lead" id="qinfo">
+                </p>
+            </div>
+        </div>
+        <div class="pineapple">
+            <div class="leaf middle"></div>
+            <div class="leaf left"></div>
+            <div class="leaf right"></div>
+            <div class="shadow"></div>
+            <div class="body">
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+                <div class="mouth"></div>
+                <div class="arm left"></div>
+                <div class="arm right"></div>
+                <div class="leg left"></div>
+                <div class="leg right"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./bootstrap/js/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
